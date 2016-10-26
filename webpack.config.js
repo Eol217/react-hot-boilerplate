@@ -21,13 +21,31 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['react-hot', 'babel'],
-        include: path.join(__dirname, 'src')
+        loaders: [ 'react-hot', 'babel' ],
+        exclude: /node_modules/
       },
       {
         test: /\.(less|css)$/,
         loader: 'style!css!less'
+      },
+      {
+        test: /\.styl$/,
+        loader: 'style!css!stylus-loader'
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+          'file?hash=sha512&digest=hex&name=[hash].[ext]',
+          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
+      },
+      {
+        test: /.*font.*\.(otf|eot|svg|ttf|woff|woff2)(\?[a-z0-9=\.]+)?$/,
+        loader: 'url-loader?limit=8192'
       }
     ]
+  },
+  resolve: {
+    extensions: [ '', '.js', '.json', '.styl' ]
   }
-};
+}
