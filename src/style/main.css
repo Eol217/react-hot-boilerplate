@@ -1,27 +1,11 @@
-@font-face {
-    font-family: "ptsans";
-    src: url("../assets/fonts/ptsans.woff2") format("woff2"),
-          url("../assets/fonts/ptsans.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "ptsans";
-    src: url("../assets/fonts/ptsansbold.woff2") format("woff2"),
-          url("../assets/fonts/ptsansbold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-}
-
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "ptsans", "Arial", sans-serif;
-  text-align: center;
-  text-transform: uppercase;
+    font-family: "ptsans", "Arial", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
 }
