@@ -1,73 +1,70 @@
 .item {
-  margin: 5vh auto;
-  padding: 10px;
-  width: 300px;
-  height: 400px;
+    margin: 5vh auto;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
 
-  color: #ffffff;
-  background-color: #000000;
-  border-radius: 5px;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 5px;
 }
 
 .item--sale {
-  color: #ffffff;
-  background-color: #e88818;
+    color: #ffffff;
+    background-color: #e88818;
 }
 
 .item__title {
-  margin: 0;
-  font-size: 32px;
+    margin: 0;
+    font-size: 32px;
 }
 
 .item__content {
-  font-size: 12px;
-  font-weight: bold;
+    font-size: 12px;
+    font-weight: bold;
 
-  color: #e88818;
+    color: #e88818;
 }
 
 .item--sale .item__content {
-  color: inherit;
+    color: inherit;
 }
 
 .item__price {
-  padding: 35px 5px;
+    padding: 35px 5px;
 
-  font-size: 130px;
+    font-size: 130px;
 
-  color: #e88818;
-  text-shadow:
-    2px 2px 1px #000000,
+    color: #e88818;
+    text-shadow: 2px 2px 1px #000000,
     5px 5px 1px #ffffff;
 }
 
 .item--sale .item__price,
 .item--sale .item__rub {
-  color: inherit;
-  text-shadow:
-    2px 2px 1px #e88818,
+    color: inherit;
+    text-shadow: 2px 2px 1px #e88818,
     5px 5px 1px #ffffff;
 }
 
 .item__rub {
-  position: relative;
-  top: 30px;
+    position: relative;
+    top: 30px;
 
-  color: #ffffff;
-  text-shadow:
-    2px 2px 1px #000000,
+    color: #ffffff;
+    text-shadow: 2px 2px 1px #000000,
     5px 5px 1px #e88818;
 }
 
 .item__time {
-  margin: 0 30px;
-  padding: 10px;
-  font-size: 60px;
+    margin: 0 30px;
+    padding: 10px;
+    font-size: 60px;
 
-  color: #e88818;
-  border-top: 2px solid #ffffff;
+    color: #e88818;
+    border-top: 2px solid #ffffff;
 }
 
 .item--sale .item__time {
-  color: #000000;
+    color: #000000;
 }

@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
-import Billboard from './components/billboard'
+import React, {Component} from 'react';
+import router from './routing'
 
 export default class App extends Component {
-  render() {
-    return (
-      <Billboard />
-    );
-  }
+    render() {
+        return (
+            <div>
+                {router}
+            </div>
+        );
+    }
 }
