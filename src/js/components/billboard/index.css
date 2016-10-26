@@ -4,6 +4,8 @@
     width: 300px;
     height: 400px;
 
+    text-align: center;
+    text-transform: uppercase;
     color: #ffffff;
     background-color: #000000;
     border-radius: 5px;

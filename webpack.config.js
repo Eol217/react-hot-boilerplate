@@ -40,6 +40,11 @@ module.exports = {
         ]
       },
       {
+        test   : /\.(jpe?g|png|gif|svg)$/,
+        include: /assets/,
+        loader : 'url'
+      },
+      {
         test: /.*font.*\.(otf|eot|svg|ttf|woff|woff2)(\?[a-z0-9=\.]+)?$/,
         loader: 'url-loader?limit=8192'
       }

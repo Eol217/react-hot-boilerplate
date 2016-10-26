@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-// import logo from '../../../assets/logo.png'
+import logo from '../../../assets/logo.png'
 
 export default class electroQueue extends Component {
     static propTypes = {}
@@ -18,7 +18,7 @@ export default class electroQueue extends Component {
         return (
             <div className="row">
                 <div className="header col-md-12">
-                    <img src={} alt=""/>
+                    <img src={logo} alt=""/>
                 </div>
                 < div className="col-md-4">123</div>
                 < div className="col-md-4">456</div>
