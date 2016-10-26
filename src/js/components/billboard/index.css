@@ -11,7 +11,7 @@
     border-radius: 5px;
 }
 
-.item--sale {
+.itemSale {
     color: #ffffff;
     background-color: #e88818;
 }
@@ -28,7 +28,7 @@
     color: #e88818;
 }
 
-.item--sale .item__content {
+.itemSale .item__content {
     color: inherit;
 }
 
@@ -42,8 +42,8 @@
     5px 5px 1px #ffffff;
 }
 
-.item--sale .item__price,
-.item--sale .item__rub {
+.itemSale .item__price,
+.itemSale .item__rub {
     color: inherit;
     text-shadow: 2px 2px 1px #e88818,
     5px 5px 1px #ffffff;
@@ -67,6 +67,6 @@
     border-top: 2px solid #ffffff;
 }
 
-.item--sale .item__time {
+.itemSale .item__time {
     color: #000000;
 }
