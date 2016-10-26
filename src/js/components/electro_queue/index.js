@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import logo from '../../../assets/logo.png'
+import './index.styl'
 
 export default class electroQueue extends Component {
     static propTypes = {}
@@ -14,15 +15,51 @@ export default class electroQueue extends Component {
     componentWillUnmount() {
     }
 
+
     queueRender = () => {
+
+        let names = ['a1', 'a2', 'a3', 'a3', 'a4'];
+
+        let nameLengths = names.map(function (name) {
+            return name;
+        });
         return (
             <div className="row">
                 <div className="header col-md-12">
-                    <img src={logo} alt=""/>
+                    <div className="element-logo"><img src={logo} alt=""/></div>
                 </div>
-                < div className="col-md-4">123</div>
-                < div className="col-md-4">456</div>
-                < div className="col-md-4">789</div>
+                <div className="block-body">
+                    < div className="orders-table col-md-6">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th>в очереди</th>
+                            </tr>
+                            {
+                                names.map((name, key) =>
+                                    <tr key={key}>
+                                        <td>{name}</td>
+                                    </tr>
+                                )}
+                            </tbody>
+                        </table>
+                    </div>
+                    < div className="orders-table complete col-md-6">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th>готово</th>
+                            </tr>
+                            {
+                                names.map((name, key) =>
+                                    <tr key={key}>
+                                        <td>{name}</td>
+                                    </tr>
+                                )}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         )
     }
